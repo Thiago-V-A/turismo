@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: tourism-postgres
+    environment:
+      POSTGRES_DB: tourism_db
+      POSTGRES_USER: tourism_user
+      POSTGRES_PASSWORD: tourism123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - tourism-network
+
+  mongodb:
+    image: mongo:6-jammy
+    container_name: tourism-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - tourism-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: tourism-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - tourism-network
+
+volumes:
+  postgres_data:
+  mongo_data:
+  redis_data:
+
+networks:
+  tourism-network:
+    driver: bridge
