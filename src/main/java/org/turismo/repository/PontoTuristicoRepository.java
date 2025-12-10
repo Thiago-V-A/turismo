@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import org.turismo.model.PontoTuristico;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.Optional;
 
 @Repository
@@ -21,4 +22,6 @@ public interface PontoTuristicoRepository extends JpaRepository<PontoTuristico, 
     Page<PontoTuristico> findByEstadoContainingIgnoreCase(String estado, Pageable pageable);
 
     Page<PontoTuristico> findByNotaMediaGreaterThanEqual(BigDecimal notaMinima, Pageable pageable);
+
+    Page<PontoTuristico> findTop10ByOrderByNotaMediaDesc();
 }
