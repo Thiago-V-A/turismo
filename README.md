@@ -256,17 +256,6 @@ services:
 - [x] Tratamento de erros
 - [x] Documentação completa
 
-## 🎯 Próximos Passos (Opcional)
-
-- [ ] Integração com API de mapas (Google Maps)
-- [ ] API de clima (OpenWeather)
-- [ ] Sistema de favoritos
-- [ ] Recomendações baseadas em localização
-- [ ] Busca por proximidade (geolocalização)
-- [ ] Paginação infinita no frontend
-- [ ] Testes unitários e integração
-- [ ] Upload real de fotos no frontend
-- [ ] Edição de perfil de usuário
 
 ## 📝 Notas
 
