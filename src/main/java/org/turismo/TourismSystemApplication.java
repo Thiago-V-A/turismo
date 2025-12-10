@@ -8,8 +8,8 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 @EnableCaching
-@EnableJpaRepositories(basePackages = "com.tourism.repository")
-@EnableMongoRepositories(basePackages = "com.tourism.repository")
+@EnableJpaRepositories(basePackages = "org.turismo.repository")
+@EnableMongoRepositories(basePackages = "org.turismo.repository")
 public class TourismSystemApplication {
 
     public static void main(String[] args) {
