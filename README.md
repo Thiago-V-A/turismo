@@ -236,9 +236,7 @@ services:
 
 ## 📚 Documentação Adicional
 
-- **QUICK_START.md** - Guia passo a passo de instalação e execução
-- **ESTRUTURA_PROJETO.md** - Estrutura completa de diretórios e arquivos
-- **Todos os arquivos de código** - Totalmente comentados e documentados
+- **START.md** - Guia passo a passo de instalação e execução
 
 ## ✅ Checklist de Entrega MVP
 
